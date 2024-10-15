@@ -1,1 +1,1 @@
-# WaterTrackingApp
+# WaterTracker

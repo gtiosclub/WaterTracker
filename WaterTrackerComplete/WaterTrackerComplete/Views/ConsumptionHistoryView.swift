@@ -8,11 +8,26 @@
 import SwiftUI
 
 struct ConsumptionHistoryView: View {
+    @Binding var waterTrackerVM: WaterTrackerViewModel
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(waterTrackerVM.hydrationLogs, id: \.id) { log in
+            VStack {
+                HStack {
+                    Text(log.hydrator.rawValue)
+                        .font(.title2)
+                        .bold()
+                        .foregroundStyle(.blue)
+                    Spacer()
+                    Text( "\(log.gramsConsumed) grams" )
+                }
+             
+                Text(log.date.formatted())
+            }
+        }
     }
 }
 
 #Preview {
-    ConsumptionHistoryView()
+    ConsumptionHistoryView(waterTrackerVM: .constant(.init()))
 }

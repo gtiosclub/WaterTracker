@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		A30CBA272CBF09AC00340720 /* WaterTrackerCompleteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30CBA262CBF09AC00340720 /* WaterTrackerCompleteApp.swift */; };
-		A30CBA292CBF09AC00340720 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30CBA282CBF09AC00340720 /* ContentView.swift */; };
 		A30CBA2B2CBF09AD00340720 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A30CBA2A2CBF09AD00340720 /* Assets.xcassets */; };
 		A30CBA2E2CBF09AD00340720 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A30CBA2D2CBF09AD00340720 /* Preview Assets.xcassets */; };
+		A30CBA352CBF09E300340720 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30CBA342CBF09E300340720 /* LandingView.swift */; };
+		A30CBA3A2CBF13A900340720 /* WaterTrackerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30CBA392CBF13A900340720 /* WaterTrackerViewModel.swift */; };
+		A30CBA3C2CBF13F500340720 /* Hydrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30CBA3B2CBF13F500340720 /* Hydrator.swift */; };
+		A30CBA3E2CBF16E500340720 /* HydrationLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30CBA3D2CBF16E500340720 /* HydrationLog.swift */; };
+		A30CBA402CBF193900340720 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30CBA3F2CBF193900340720 /* Screen.swift */; };
+		A30CBA422CBF1AB900340720 /* AddHydratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30CBA412CBF1AB900340720 /* AddHydratorView.swift */; };
+		A30CBA442CBF1AC200340720 /* ConsumptionHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30CBA432CBF1AC200340720 /* ConsumptionHistoryView.swift */; };
+		A30CBA462CBF21F800340720 /* ConfirmHydratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30CBA452CBF21F800340720 /* ConfirmHydratorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A30CBA232CBF09AC00340720 /* WaterTrackerComplete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterTrackerComplete.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30CBA262CBF09AC00340720 /* WaterTrackerCompleteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTrackerCompleteApp.swift; sourceTree = "<group>"; };
-		A30CBA282CBF09AC00340720 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A30CBA2A2CBF09AD00340720 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A30CBA2D2CBF09AD00340720 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A30CBA342CBF09E300340720 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		A30CBA392CBF13A900340720 /* WaterTrackerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTrackerViewModel.swift; sourceTree = "<group>"; };
+		A30CBA3B2CBF13F500340720 /* Hydrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydrator.swift; sourceTree = "<group>"; };
+		A30CBA3D2CBF16E500340720 /* HydrationLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydrationLog.swift; sourceTree = "<group>"; };
+		A30CBA3F2CBF193900340720 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		A30CBA412CBF1AB900340720 /* AddHydratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHydratorView.swift; sourceTree = "<group>"; };
+		A30CBA432CBF1AC200340720 /* ConsumptionHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumptionHistoryView.swift; sourceTree = "<group>"; };
+		A30CBA452CBF21F800340720 /* ConfirmHydratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmHydratorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +66,9 @@
 			isa = PBXGroup;
 			children = (
 				A30CBA262CBF09AC00340720 /* WaterTrackerCompleteApp.swift */,
-				A30CBA282CBF09AC00340720 /* ContentView.swift */,
+				A30CBA382CBF137D00340720 /* ViewModels */,
+				A30CBA372CBF137400340720 /* Models */,
+				A30CBA362CBF09E600340720 /* Views */,
 				A30CBA2A2CBF09AD00340720 /* Assets.xcassets */,
 				A30CBA2C2CBF09AD00340720 /* Preview Content */,
 			);
@@ -65,6 +81,35 @@
 				A30CBA2D2CBF09AD00340720 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A30CBA362CBF09E600340720 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A30CBA342CBF09E300340720 /* LandingView.swift */,
+				A30CBA412CBF1AB900340720 /* AddHydratorView.swift */,
+				A30CBA452CBF21F800340720 /* ConfirmHydratorView.swift */,
+				A30CBA432CBF1AC200340720 /* ConsumptionHistoryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A30CBA372CBF137400340720 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A30CBA3B2CBF13F500340720 /* Hydrator.swift */,
+				A30CBA3D2CBF16E500340720 /* HydrationLog.swift */,
+				A30CBA3F2CBF193900340720 /* Screen.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A30CBA382CBF137D00340720 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A30CBA392CBF13A900340720 /* WaterTrackerViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +182,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A30CBA292CBF09AC00340720 /* ContentView.swift in Sources */,
+				A30CBA422CBF1AB900340720 /* AddHydratorView.swift in Sources */,
+				A30CBA402CBF193900340720 /* Screen.swift in Sources */,
+				A30CBA352CBF09E300340720 /* LandingView.swift in Sources */,
+				A30CBA442CBF1AC200340720 /* ConsumptionHistoryView.swift in Sources */,
+				A30CBA3E2CBF16E500340720 /* HydrationLog.swift in Sources */,
+				A30CBA3A2CBF13A900340720 /* WaterTrackerViewModel.swift in Sources */,
+				A30CBA3C2CBF13F500340720 /* Hydrator.swift in Sources */,
 				A30CBA272CBF09AC00340720 /* WaterTrackerCompleteApp.swift in Sources */,
+				A30CBA462CBF21F800340720 /* ConfirmHydratorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
